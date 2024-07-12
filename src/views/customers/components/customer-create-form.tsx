@@ -75,10 +75,7 @@ const CustomerCreateForm: FC<CustomerCreateFormProps> = ({ closeModal }) => {
         <option value={GENDERS.OTHER}>Otro</option>
       </Select>
 
-      <Select name='profession' value={profession.value} onChange={ev => {
-        console.log(ev.target.value)
-        dispatchFormValues(professionChanged(ev.target.value))
-      }}>
+      <Select name='profession' value={profession.value} onChange={ev => dispatchFormValues(professionChanged(ev.target.value))}>
         {
           PROFESSIONS.map(profession => (
             <option key={profession.id} value={profession.value}>{profession.value}</option>

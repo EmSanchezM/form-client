@@ -18,5 +18,5 @@ docker images
 4. Ejecutar la imagen
 
 ```
-docker run -p 5173:5173 form-client-app
+docker run -p 5173:5173 -p 4000:4000 form-client-app
 ```

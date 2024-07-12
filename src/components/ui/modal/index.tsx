@@ -1,4 +1,4 @@
-import React, { FC, ReactNode, useEffect } from 'react';
+import { FC, ReactNode, useEffect } from 'react';
 import { createPortal } from 'react-dom';
 
 import IconButton from '../buttons/icon-button';

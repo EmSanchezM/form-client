@@ -1,4 +1,4 @@
-import React, { FC, ReactNode, InputHTMLAttributes } from 'react';
+import { FC, ReactNode, InputHTMLAttributes } from 'react';
 
 import ArrowDownIcon from '../../icons/arrow-down.icon';
 import style from './select.module.css';

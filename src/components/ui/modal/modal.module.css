@@ -13,7 +13,7 @@
 
 .modal {
   position: relative;
-  width: 20rem;
+  width: 35rem;
   background-color: var(--color-white);
   border-radius: var(--radius-md);
 
@@ -23,7 +23,7 @@
 .close {
   position: absolute;
   right: -1.25rem;
-  top: -1.25rem;
+  top: -1rem;
 }
 
 .bodyOverflow {

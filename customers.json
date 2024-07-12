@@ -1,40 +1,16 @@
 {
   "customers": [
     {
-      "id": "a4f9fbb1-1c78-4a2d-8c9f-75b6fa6ec70c",
-      "firstName": "Juan",
-      "lastName": "Pérez",
-      "birthday": "1990-01-15T00:00:00Z",
-      "gender": "Masculino",
-      "cellphone": "12345678",
-      "homephone": "87654321",
-      "addressHome": "Calle Falsa 123",
-      "profession": "Ingeniero",
-      "incomes": 55000.5
-    },
-    {
-      "id": "b2d79f47-c9d4-4e5c-9d3c-e63f1e2852e3",
-      "firstName": "María",
-      "lastName": "García",
-      "birthday": "1985-05-25T00:00:00Z",
-      "gender": "Femenino",
-      "cellphone": "23456789",
-      "homephone": "76543210",
-      "addressHome": "Avenida Siempreviva 742",
-      "profession": "Doctora",
-      "incomes": 75000.75
-    },
-    {
       "id": "5e5c8d41-3d6b-4734-8b36-b1b4a0d4e98a",
       "firstName": "Carlos",
-      "lastName": "López",
-      "birthday": "1978-12-05T00:00:00Z",
+      "lastName": "Lopez",
+      "birthday": "1994-06-30",
       "gender": "Masculino",
       "cellphone": "34567890",
       "homephone": "65432109",
+      "profession": "Farmacéutico",
       "addressHome": "Boulevard del Sol 456",
-      "profession": "Profesor",
-      "incomes": 48000.0
+      "incomes": 48000.5
     },
     {
       "id": "6c2f8439-b8d8-4a48-b3a7-e3f8df0f55a2",
@@ -215,18 +191,6 @@
       "addressHome": "Calle de la Esperanza 102",
       "profession": "Estudiante",
       "incomes": 15000.1
-    },
-    {
-      "id": "1g3h4i5f-2k5f-3l6f-4m1f-6g7h8i9j0k1f",
-      "firstName": "Tomás",
-      "lastName": "Jiménez",
-      "birthday": "1982-08-12T00:00:00Z",
-      "gender": "Masculino",
-      "cellphone": "90123456",
-      "homephone": "19876543",
-      "addressHome": "Avenida de los Robles 103",
-      "profession": "Doctor",
-      "incomes": 82000.95
     }
   ]
 }

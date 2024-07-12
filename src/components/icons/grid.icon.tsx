@@ -1,4 +1,4 @@
-import React, { ReactNode, SVGProps } from "react";
+import { ReactNode, SVGProps } from "react";
 
 interface GridIconPros extends SVGProps<SVGSVGElement> {
   children?: ReactNode;

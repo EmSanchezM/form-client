@@ -1,10 +1,10 @@
 import { ReactNode, SVGProps } from "react";
 
-interface CrossCircleIconProps extends SVGProps<SVGSVGElement> {
+interface DotsIconProps extends SVGProps<SVGSVGElement> {
   children?: ReactNode;
 }
 
-const CrossCircleIcon = (props: CrossCircleIconProps) => (
+const DotsIcon = (props: DotsIconProps) => (
   <svg
     {...props}
     fill='none'
@@ -16,9 +16,9 @@ const CrossCircleIcon = (props: CrossCircleIconProps) => (
       strokeLinecap='round'
       strokeLinejoin='round'
       strokeWidth='2'
-      d='M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z'
+      d='M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z'
     ></path>
   </svg>
 );
 
-export default CrossCircleIcon;
+export default DotsIcon;

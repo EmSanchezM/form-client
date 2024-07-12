@@ -1,4 +1,4 @@
-import React, { FC, ButtonHTMLAttributes, ComponentType } from 'react';
+import { FC, ButtonHTMLAttributes, ComponentType } from 'react';
 import style from './icon-button.module.css';
 
 const CLASSNAMES = {

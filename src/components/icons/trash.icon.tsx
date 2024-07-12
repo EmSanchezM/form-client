@@ -1,4 +1,4 @@
-import React, { ReactNode, SVGProps } from "react";
+import { ReactNode, SVGProps } from "react";
 
 interface TrashIconProps extends SVGProps<SVGSVGElement> {
   children?: ReactNode;

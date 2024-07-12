@@ -1,4 +1,4 @@
-import React, { ReactNode, SVGProps } from "react";
+import { ReactNode, SVGProps } from "react";
 
 interface PencilIconPros extends SVGProps<SVGSVGElement> {
   children?: ReactNode;

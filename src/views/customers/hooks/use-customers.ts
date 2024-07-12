@@ -1,54 +1,54 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react';
 
-import { Customer } from "../../../lib/models";
-import { getAllCustomers } from "../../../lib/api/customers.api";
-import { toastAlert } from "../../../lib/events/alert-events";
+import { Customer } from '../../../lib/models';
+import { getAllCustomers } from '../../../lib/api/customers.api';
+import { toastAlert } from '../../../lib/events/alert-events';
 
 interface FetchCustomerState {
-  data: Customer[];
-  error: boolean;
-  loading: boolean;
+	data: Customer[];
+	error: boolean;
+	loading: boolean;
 }
 
-export const useCustomers = () => {
-  const [customers, setCustomers] = useState<FetchCustomerState>({
-    data: [],
-    error: false,
-    loading: true,
-  });
+export const useCustomers = (filters?: { search?: string }) => {
+	const [customers, setCustomers] = useState<FetchCustomerState>({
+		data: [],
+		error: false,
+		loading: true
+	});
 
-  const setData = (newData: Customer[]) =>
-    setCustomers({ data: newData, loading: false, error: false });
+	const setData = (newData: Customer[]) =>
+		setCustomers({ data: newData, loading: false, error: false });
 
-  const setError = () =>
-    setCustomers({ data: [], loading: false, error: true });
+	const setError = () =>
+		setCustomers({ data: [], loading: false, error: true });
 
-  useEffect(() => {
-    const controller = new AbortController();
+	useEffect(() => {
+		const controller = new AbortController();
 
-    loadCustomers(setData, setError, controller.signal);
+		loadCustomers(setData, setError, controller.signal);
 
-    return () => controller.abort();
-  }, []);
+		return () => controller.abort();
+	}, [filters]);
 
-  return {
-    customers: customers.data,
-    customersError: customers.error,
-    customersLoading: customers.loading,
-  };
+	return {
+		customers: customers.data,
+		customersError: customers.error,
+		customersLoading: customers.loading
+	};
 };
 
 const loadCustomers = async (
-  setData: (newData: Customer[]) => void,
-  setError: () => void,
-  signal: AbortSignal,
+	setData: (newData: Customer[]) => void,
+	setError: () => void,
+	signal: AbortSignal
 ) => {
-  const { customers, aborted } = await getAllCustomers(signal);
+	const { customers, aborted } = await getAllCustomers(signal);
 
-  if (aborted) return;
-  if (customers) setData(customers);
-  else {
-    setError();
-    toastAlert.error("Error al cargar clientes");
-  }
+	if (aborted) return;
+	if (customers) setData(customers);
+	else {
+		setError();
+		toastAlert.error('Error al cargar clientes');
+	}
 };

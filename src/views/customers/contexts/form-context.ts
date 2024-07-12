@@ -1,3 +1,9 @@
-import { createContext } from "react";
+import { createContext } from 'react';
 
-export const CustomerFormsContext = createContext(undefined);
+interface CustomerContext {
+	onSuccess: () => void;
+}
+
+export const CustomerFormsContext = createContext<CustomerContext | undefined>(
+	undefined
+);

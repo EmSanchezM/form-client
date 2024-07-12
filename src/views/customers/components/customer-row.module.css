@@ -1,0 +1,25 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+
+  box-shadow: var(--shadow-sm);
+  border-radius: var(--radius-md);
+  padding: 0.75rem 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.name {
+  width: 50%;
+}
+
+.action {
+  width: 10%;
+}

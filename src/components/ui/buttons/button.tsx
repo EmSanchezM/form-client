@@ -7,8 +7,8 @@ const KIND_CLASSNAME = {
 };
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-  kind: 'primary' | 'secondary';
-  icon: ReactNode;
+  kind?: 'primary' | 'secondary';
+  icon?: ReactNode;
   className?: string;
 }
 

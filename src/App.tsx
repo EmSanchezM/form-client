@@ -1,7 +1,8 @@
+import CustomersView from "./views/customers"
 
 function App() {
   return (
-    <h1>Cliente</h1>
+    <CustomersView />
   )
 }
 

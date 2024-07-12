@@ -12,4 +12,4 @@ RUN npm run build
 
 EXPOSE 5173 4000
 
-CMD ["sh", "-c", "npm run server & npm run dev"],
+CMD ["npm", "run", "start"],

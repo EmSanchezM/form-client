@@ -1,5 +1,6 @@
 import { CREATE_FORM_ACTIONS } from '../../../lib/constants/create-form-action.constant';
 import {
+	validateAddress,
 	validateFirstName,
 	validateIncomes,
 	validateLastName,
@@ -136,9 +137,11 @@ export const createCustomerFormReducer = (
 			};
 		}
 		case CREATE_FORM_ACTIONS.ADDRESS_HOME: {
+			const error = validateAddress(payload);
+
 			return {
 				...state,
-				addressHome: { value: payload, error: undefined }
+				addressHome: { value: payload, error }
 			};
 		}
 		case CREATE_FORM_ACTIONS.PROFESSION: {

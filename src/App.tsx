@@ -1,9 +1,7 @@
 import CustomersView from "./views/customers"
 
 function App() {
-  return (
-    <CustomersView />
-  )
+  return <CustomersView />
 }
 
 export default App
